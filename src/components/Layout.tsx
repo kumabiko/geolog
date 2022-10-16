@@ -1,6 +1,5 @@
 import { FC, ReactNode } from 'react';
 import Head from 'next/head';
-import { BadgeCheckIcon } from '@heroicons/react/solid';
 import { HeaderSimple } from '@/components/Header';
 import { HEADER_LINKS } from '@/common/constants';
 
@@ -17,9 +16,7 @@ export const Layout: FC<Title> = ({ children, title = 'Todo app' }) => {
       <div className="flex flex-col min-h-screen bg-gray-100">
         <HeaderSimple links={HEADER_LINKS.links}></HeaderSimple>
         <main className="flex-1">{children}</main>
-        <footer className="flex h-12 w-full items-center justify-center border-t">
-          <BadgeCheckIcon className="h-6 w-6 text-blue-500" />
-        </footer>
+        <footer className="flex h-12 w-full items-center justify-center border-t"></footer>
       </div>
     </div>
   );

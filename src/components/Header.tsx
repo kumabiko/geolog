@@ -50,7 +50,7 @@ interface HeaderSimpleProps {
   links: { link: string; label: string }[];
 }
 
-export function HeaderSimple({ links }: HeaderSimpleProps) {
+export const HeaderSimple = ({ links }: HeaderSimpleProps) => {
   const [opened, { toggle }] = useDisclosure(false);
   const [active, setActive] = useState(links[0].link);
   const { classes, cx } = useStyles();
@@ -70,7 +70,7 @@ export function HeaderSimple({ links }: HeaderSimpleProps) {
   ));
 
   return (
-    <Header height={60} mb={120}>
+    <Header height={64}>
       <Container className={classes.header}>
         <GeologIcon />
         <Group spacing={5} className={classes.links}>
@@ -80,4 +80,4 @@ export function HeaderSimple({ links }: HeaderSimpleProps) {
       </Container>
     </Header>
   );
-}
+};
