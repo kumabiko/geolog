@@ -7,7 +7,8 @@ type Title = {
   title: string;
   children: ReactNode;
 };
-export const Layout: FC<Title> = ({ children, title = 'Todo app' }) => {
+
+export const Layout: FC<Title> = ({ title, children }) => {
   return (
     <div>
       <Head>
