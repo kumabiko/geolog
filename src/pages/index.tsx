@@ -23,7 +23,7 @@ const Home: NextPage = () => {
           className="justify-items-center items-center"
         >
           <CountryCard
-            image="/image/CountryCards/Asia/su-san-lee-E_eWwM29wfU-unsplash.jpg"
+            image="/image/CountryCards/Asia/svetlana-gumerova-PMkQ7WVWqr0-unsplash.jpg"
             title="Asia"
           />
           <CountryCard
